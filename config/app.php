@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'ArtCollection'),
 
     /*
     |--------------------------------------------------------------------------
@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://localhost:1455'),
 
     /*
     |--------------------------------------------------------------------------
@@ -171,11 +171,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        ArtCollection\Providers\AppServiceProvider::class,
+        ArtCollection\Providers\AuthServiceProvider::class,
+        // ArtCollection\Providers\BroadcastServiceProvider::class,
+        ArtCollection\Providers\EventServiceProvider::class,
+        ArtCollection\Providers\RouteServiceProvider::class,
 
         //LavaChart service provider
         Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,

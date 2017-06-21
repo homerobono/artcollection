@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/layout', function() { return view('layout'); });
 Route::get('/view', 'ViewController@index')->name('view');
 Route::get('/area', 'ViewAreaController@index')->name('area');
 Route::get('/geo', 'ViewGeoController@index')->name('geo');

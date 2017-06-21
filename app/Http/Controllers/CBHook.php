@@ -1,5 +1,5 @@
 <?php 
-namespace App\Http\Controllers;
+namespace ArtCollection\Http\Controllers;
 
 use DB;
 use Session;
